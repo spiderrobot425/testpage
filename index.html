@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; background: #f8f8f8; }
+        .container { background: #fff; padding: 2rem; border-radius: 8px; max-width: 600px; margin: auto; box-shadow: 0 2px 8px #0001; }
+        h1 { color: #333; }
+        p { color: #555; }
+        .test-section { margin-top: 2rem; }
+        button { padding: 0.5rem 1rem; font-size: 1rem; border: none; border-radius: 4px; background: #007bff; color: #fff; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        #result { margin-top: 1rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Page</h1>
+        <p>This is a simple HTML test page. Click the button below to perform a test action.</p>
+        <div class="test-section">
+            <button onclick="runTest()">Run Test</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script>
+        function runTest() {
+            document.getElementById('result').textContent = "✅ Test ran successfully!";
+        }
+    </script>
+</body>
+</html>
